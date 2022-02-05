@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-center{
+    color: #E32A37;
+    text-shadow: 1px 1px 9px #666161;
+}
+.saldos-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#btn-color{
+    background-color: #231F20;
+    border-radius: 0;
+    color: #fff;
+    padding: 5px 25px;
+    margin: 15px;
+}
+
+.background-image{
+    width: 100%;
+}
+
+#textLaRedouteFooter{
+    color: white;
+    margin-top: 5px;
+}
+
+/*
+GRID SYSTEM
+*/
+#grid-system{
+    margin-top: 35px;
+}
+.margens{
+    margin: 0 10%;
+}
+.container{
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: auto;
+
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+.product-gridd{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+}
+
+.cardimg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+img{
+    max-width: 100%;
+    display: block;
+    border: none;
+}
+.stacked{
+    display: grid;
+}
+.stacked > *{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+@media only screen and (max-width: 1050px) {
+    .cardimg{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .cardimg{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .product-gridd{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .cardimg{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .product-gridd{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+  }
