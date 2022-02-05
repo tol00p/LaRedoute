@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 0 300px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-info {
+    display: flex;
+}
+
+.product-small-img img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.product-small-img img:hover{
+    opacity: 1;
+}
+
+.img-container img{
+    height: 500px;
+}
