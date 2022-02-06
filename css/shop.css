@@ -1,19 +1,42 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#icons {
+    display: flex;
+    gap: 12px;
 }
 
 header {
     padding: 0 300px;
     height: 100px;
-    background-color: lightgray;
+    background-color: #1e191a;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+#logo-img {
+    width: 200px;
+}
+
+.img-nav {
+    width: 25px;
+}
+
+.links-nav {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
 .shop-info {
     display: flex;
+    padding: 0 300px;
+    gap: 30px;
+    margin-top: 60px;
 }
 
 .product-small-img img{
@@ -21,6 +44,7 @@ header {
     margin: 10px 0;
     cursor: pointer;
     opacity: .6;
+    transition: 0.2s ease-in-out;
 }
 
 .product-small-img img:hover{
@@ -29,4 +53,49 @@ header {
 
 .img-container img{
     height: 500px;
+}
+
+hr {
+    height: .3px;
+    width: 200px;
+    background: rgb(129, 129, 129);
+    margin-bottom: 14px;
+}
+
+.btn-info {
+    width: 40px;
+    height: 40px;
+    background-color: #1e191a;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.remove-btn {
+    width: 170px;
+    height: 40px;
+    background-color: #a70626;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#info-text {
+    padding-bottom: 7px;
+}
+
+#info-textt {
+    padding-bottom: 15px;
+}
+
+#info-texttt {
+    padding-top: 15px;
+}
+
+#p-text {
+    padding-bottom: 14px;
+}
+
+#ff {
+    padding-top: 12px;
 }
