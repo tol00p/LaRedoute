@@ -21,22 +21,23 @@
         <a class="links-nav" href="">Eletrodomésticos</a>    
     </div>
     <div id="icons">
-      <img class="img-nav" src="./img/search.png" alt="">
-      <img class="img-nav" src="./img/car.png" alt="">
-      <img class="img-nav" src="./img/acc.png" alt="">
+        <img class="img-nav" src="./img/search.png" alt="Icone procurar">
+        <img class="img-nav" src="./img/car.png" alt="Icone cesto">
+        <img class="img-nav" src="./img/acc.png" alt="Icone utilizador">
     </div>
 </header>
 
 <section class="shop-info">
 <div class="product">
-    <div class="img-container">
+    <div class="img-container" id="canvas">
         <img id="imageBox" src="./img/find-trending-products-sell-ecommerce.png" alt="">
     </div>
     <div class="product-small-img">
-        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="myFunction(this)">
-        <img src="./img/download.jpg" alt="" onclick="myFunction(this)">
-        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="myFunction(this)">
-        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="myFunction(this)">
+        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="bigImage(this)">
+        <img src="./img/download.jpg" alt="" onclick="bigImage(this)">
+        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="bigImage(this)">
+        <img src="./img/find-trending-products-sell-ecommerce.png" alt="" onclick="bigImage(this)">
+        <img src="https://miro.medium.com/max/724/1*6s_Dkfeldg35ySmAp0tPkQ.png" alt="" onclick="beginThreeJs()">
     </div>
 </div>
 <div class="info">
@@ -60,9 +61,10 @@
 </div>
 </section>
 
-
-  
-      <script src="script.js"></script>
+    <script src="./node_modules/three/build/three.min.js"></script>
+    <script src="./node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
     <script src="button.js"></script>
 </body>
 
