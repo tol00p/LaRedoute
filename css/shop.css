@@ -51,7 +51,6 @@ header {
     padding: 0 300px;
     gap: 30px;
     margin-top: 40px;
-    background-color: #921111;
 }
 
 .product-small-img img{
@@ -192,7 +191,6 @@ hr {
         padding: 0 300px;
         gap: 30px;
         margin-top: 40px;
-        background-color: #921111;
     }
   }
 
@@ -212,7 +210,6 @@ hr {
         padding: 0 300px;
         gap: 30px;
         margin-top: 40px;
-        background-color: #921111;
     }
   }
 
@@ -239,7 +236,7 @@ hr {
         padding: 0 50px;
     }
     .img-container img{
-        height: 150px;
+        height: 200px;
     }
 
     .product-small-img img{
