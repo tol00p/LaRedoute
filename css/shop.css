@@ -113,3 +113,24 @@ hr {
     font-size: 15px;
     margin-top: 3px;
 }
+
+#catalogo-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#cata {
+    padding: 0 300px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.mg {
+    margin-top: 40px;
+}
+
+.mg-top {
+    margin-top: 40px;
+}
