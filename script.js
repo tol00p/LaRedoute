@@ -1,6 +1,8 @@
 function endThreeJs(){
     //function ends three js animation so they dont stack
+    //document.getElementById('canvas').innerHTML="";
     
+    //document.getElementById('canvas').removeChild(renderer.domElement);
 }
 
 function bigImage(smallImg)
