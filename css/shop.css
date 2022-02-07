@@ -284,6 +284,10 @@ hr {
     width: 100%;
 }
 
+.overview p {
+    color: white;
+}
+
 .producttt h3{
     color: #fff;
     font-weight: 400;
