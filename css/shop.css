@@ -54,6 +54,11 @@ h4 {
     display: flex;
 }
 
+.links-nav:hover {
+    color: orange;
+    transition: .3s ease-in-out;
+}
+
 .navbar-links li {
     list-style: none;
 }
