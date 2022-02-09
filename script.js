@@ -24,14 +24,15 @@ function beginThreeJs(){
     endThreeJs();
     //var fullImg = document.getElementById("imageBox");
     const canvas = document.getElementById('canvas');
-    
+
     
     CANVAS_WIDTH = document.getElementById("canvas").offsetWidth,
     CANVAS_HEIGHT = document.getElementById("canvas").offsetHeight;
 
 
     var scene = new THREE.Scene()
-    
+
+   
     //scene.background = new THREE.Color(0x5f6661)
     var camera = new THREE.PerspectiveCamera( 60, (CANVAS_WIDTH / CANVAS_HEIGHT), 1, 1000 )
     var renderer = new THREE.WebGLRenderer()
@@ -57,13 +58,16 @@ function beginThreeJs(){
     canvas.appendChild(renderer.domElement);
 
 
-    camera.position.x = 0
-    camera.position.y = 20
-    camera.position.z = 17
+    camera.position.x = 1
+    camera.position.y = 0.5
+    camera.position.z = 2
     camera.lookAt(0,0,0)
 
+    var relogio = new THREE.Clock()
+    var misturador ;
+
     new THREE.GLTFLoader().load(
-        'models/desk2022.gltf',
+        'models/desk2022_1.gltf',
         function ( gltf ) {
         scene.add( gltf.scene )
 
@@ -74,10 +78,22 @@ function beginThreeJs(){
             }
 
         })
+        misturador = new THREE.AnimationMixer(scene)
+        clipe = THREE.AnimationClip.findByName( gltf.animations,'leftStorage2Action')
+        acao = misturador.clipAction( clipe )
+        
+        
+            acao.play()
+            misturador.update(relogio.getDelta);
+        
+        
     }
     )
 
+   
+
     
+
     if(hasPanel!=true){
         var obj = {
         
