@@ -489,3 +489,15 @@ a {
         width: 100%;
     }
   }
+
+  #teth img{
+    object-fit: cover;
+    width: 40px;
+      height: 40px;
+      border-radius: 5px;
+}
+
+.btn-texture {
+    display: flex;
+    gap: 5px;
+}
