@@ -82,7 +82,7 @@ function beginThreeJs(){
         var obj = {
         
 
-            light: 6.0,
+            
             rotate: true,
             openDoor: false,
             openDrawers: false,
@@ -95,13 +95,11 @@ function beginThreeJs(){
         };
     
         var gui = new dat.gui.GUI();
+        gui.domElement.id = 'gui';
     
         gui.remember(obj);
     
        
-    
-        gui.add(obj, 'light').min(-10).max(10).step(0.25);
-        //gui.add(obj, 'height').step(5); // Increment amount
     
         // Choose from accepted values
         
@@ -133,10 +131,10 @@ function animate() {
     renderer.render( scene, camera )
     //console.log("veio");
     var autoRotate = obj.rotate;
-    var lightPosition = obj.light;
+    //var lightPosition = obj.light;
     
         controls.autoRotate=autoRotate;
-        spotLight.intensity = lightPosition;
+        //spotLight.intensity = lightPosition;
         //console.log(controls.autoRotate);
         controls.update();
     
